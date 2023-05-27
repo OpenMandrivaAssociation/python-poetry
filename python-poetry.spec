@@ -1,6 +1,6 @@
 Name:		python-poetry
 Version:	1.4.0
-Release:	2
+Release:	3
 Source0:	https://files.pythonhosted.org/packages/source/p/poetry/poetry-%{version}.tar.gz
 Summary:	Python dependency management and packaging made easy.
 URL:		https://pypi.org/project/poetry/
