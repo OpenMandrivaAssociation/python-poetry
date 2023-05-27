@@ -4,6 +4,7 @@ Release:	2
 Source0:	https://files.pythonhosted.org/packages/source/p/poetry/poetry-%{version}.tar.gz
 Summary:	Python dependency management and packaging made easy.
 URL:		https://pypi.org/project/poetry/
+Patch0: relax-deps.patch
 License:	MIT
 Group:		Development/Python
 BuildRequires:	python%{pyver}dist(pip)
