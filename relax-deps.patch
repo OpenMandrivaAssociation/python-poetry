@@ -1,0 +1,37 @@
+diff -uraN poetry-1.7.1/PKG-INFO omv-poetry-1.7.1/PKG-INFO
+--- poetry-1.7.1/PKG-INFO	1970-01-01 01:00:00.000000000 +0100
++++ omv-poetry-1.7.1/PKG-INFO	2024-02-04 15:50:46.567244784 +0100
+@@ -24,7 +24,7 @@
+ Requires-Dist: cleo (>=2.1.0,<3.0.0)
+ Requires-Dist: crashtest (>=0.4.1,<0.5.0)
+ Requires-Dist: dulwich (>=0.21.2,<0.22.0)
+-Requires-Dist: fastjsonschema (>=2.18.0,<3.0.0)
++Requires-Dist: fastjsonschema (>=2.18.0,<5.0.0)
+ Requires-Dist: importlib-metadata (>=4.4) ; python_version < "3.10"
+ Requires-Dist: installer (>=0.7.0,<0.8.0)
+ Requires-Dist: keyring (>=24.0.0,<25.0.0)
+@@ -32,8 +32,8 @@
+ Requires-Dist: pexpect (>=4.7.0,<5.0.0)
+ Requires-Dist: pkginfo (>=1.9.4,<2.0.0)
+ Requires-Dist: platformdirs (>=3.0.0,<4.0.0)
+-Requires-Dist: poetry-core (==1.8.1)
+-Requires-Dist: poetry-plugin-export (>=1.6.0,<2.0.0)
++Requires-Dist: poetry-core (>=1.8.1)
++Requires-Dist: poetry-plugin-export (>=1.5.0,<2.0.0)
+ Requires-Dist: pyproject-hooks (>=1.0.0,<2.0.0)
+ Requires-Dist: requests (>=2.26,<3.0)
+ Requires-Dist: requests-toolbelt (>=0.9.1,<2)
+diff -uraN poetry-1.7.1/pyproject.toml omv-poetry-1.7.1/pyproject.toml
+--- poetry-1.7.1/pyproject.toml	2023-11-16 20:08:40.728930000 +0100
++++ omv-poetry-1.7.1/pyproject.toml	2024-02-04 15:49:07.491191069 +0100
+@@ -32,8 +32,8 @@
+ [tool.poetry.dependencies]
+ python = "^3.8"
+ 
+-poetry-core = "1.8.1"
+-poetry-plugin-export = "^1.6.0"
++poetry-core >= "1.9.0"
++poetry-plugin-export >= "1.5.0"
+ build = "^1.0.3"
+ cachecontrol = { version = "^0.13.0", extras = ["filecache"] }
+ cleo = "^2.1.0"
