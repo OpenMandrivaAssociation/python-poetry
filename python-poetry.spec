@@ -11,6 +11,9 @@ BuildRequires:	python%{pyver}dist(wheel)
 BuildRequires:	python%{pyver}dist(poetry-core)
 BuildArch:	noarch
 
+%patchlist
+poetry-1.8.3-dulwich-dep.patch
+
 %description
 Python dependency management and packaging made easy.
 

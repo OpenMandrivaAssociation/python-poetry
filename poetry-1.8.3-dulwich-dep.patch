@@ -1,0 +1,24 @@
+diff -up poetry-1.8.3/PKG-INFO.omv~ poetry-1.8.3/PKG-INFO
+--- poetry-1.8.3/PKG-INFO.omv~	2024-08-01 22:31:06.245795100 +0200
++++ poetry-1.8.3/PKG-INFO	2024-08-01 22:31:09.849837057 +0200
+@@ -23,7 +23,7 @@ Requires-Dist: build (>=1.0.3,<2.0.0)
+ Requires-Dist: cachecontrol[filecache] (>=0.14.0,<0.15.0)
+ Requires-Dist: cleo (>=2.1.0,<3.0.0)
+ Requires-Dist: crashtest (>=0.4.1,<0.5.0)
+-Requires-Dist: dulwich (>=0.21.2,<0.22.0)
++Requires-Dist: dulwich (>=0.21.2,<0.23.0)
+ Requires-Dist: fastjsonschema (>=2.18.0,<3.0.0)
+ Requires-Dist: importlib-metadata (>=4.4) ; python_version < "3.10"
+ Requires-Dist: installer (>=0.7.0,<0.8.0)
+diff -up poetry-1.8.3/pyproject.toml.omv~ poetry-1.8.3/pyproject.toml
+--- poetry-1.8.3/pyproject.toml.omv~	2024-08-01 22:43:03.375410869 +0200
++++ poetry-1.8.3/pyproject.toml	2024-08-01 22:43:14.651502555 +0200
+@@ -37,7 +37,7 @@ build = "^1.0.3"
+ cachecontrol = { version = "^0.14.0", extras = ["filecache"] }
+ cleo = "^2.1.0"
+ crashtest = "^0.4.1"
+-dulwich = "^0.21.2"
++dulwich = ">=0.21.2"
+ fastjsonschema = "^2.18.0"
+ importlib-metadata = { version = ">=4.4", python = "<3.10" }
+ installer = "^0.7.0"
