@@ -1,5 +1,5 @@
 Name:		python-poetry
-Version:	1.8.4
+Version:	1.8.5
 Release:	1
 Source0:	https://files.pythonhosted.org/packages/source/p/poetry/poetry-%{version}.tar.gz
 Summary:	Python dependency management and packaging made easy.
