@@ -1,18 +1,21 @@
 Name:		python-poetry
-Version:	1.8.5
+Version:	2.1.2
 Release:	1
 Source0:	https://files.pythonhosted.org/packages/source/p/poetry/poetry-%{version}.tar.gz
-Summary:	Python dependency management and packaging made easy.
+Summary:	Python dependency management and packaging made easy
 URL:		https://pypi.org/project/poetry/
 License:	MIT
 Group:		Development/Python
+BuildSystem:	python
 BuildRequires:	python%{pyver}dist(pip)
 BuildRequires:	python%{pyver}dist(wheel)
 BuildRequires:	python%{pyver}dist(poetry-core)
+BuildRequires:	python%{pyver}dist(findpython)
+BuildRequires:	python%{pyver}dist(pbs-installer)
+
 BuildArch:	noarch
 
-%patchlist
-poetry-1.8.3-dulwich-dep.patch
+#%%patchlist
 
 %description
 Python dependency management and packaging made easy.
