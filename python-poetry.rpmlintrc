@@ -1,0 +1,3 @@
+# As of 2.2.1:
+# zero-length /usr/lib/python3.14/site-packages/poetry/console/events/console_events.py
+addFilter("E: zero-length")
