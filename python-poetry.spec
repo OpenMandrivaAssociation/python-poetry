@@ -1,6 +1,6 @@
 Name:		python-poetry
-Version:	2.2.1
-Release:	2
+Version:	2.3.2
+Release:	1
 Source0:	https://files.pythonhosted.org/packages/source/p/poetry/poetry-%{version}.tar.gz
 Source1000:	%{name}.rpmlintrc
 Summary:	Python dependency management and packaging made easy
