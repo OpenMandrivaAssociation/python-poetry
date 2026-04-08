@@ -1,0 +1,24 @@
+diff -up python-poetry-2.3.3/PKG-INFO.omv~ python-poetry-2.3.3/PKG-INFO
+--- python-poetry-2.3.3/PKG-INFO.omv~	2026-04-08 14:01:38.820878570 +0200
++++ python-poetry-2.3.3/PKG-INFO	2026-04-08 14:02:03.613040369 +0200
+@@ -24,7 +24,7 @@ Requires-Dist: cleo (>=2.1.0,<3.0.0)
+ Requires-Dist: dulwich (>=0.25.0,<2)
+ Requires-Dist: fastjsonschema (>=2.18.0,<3.0.0)
+ Requires-Dist: findpython (>=0.6.2,<0.8.0)
+-Requires-Dist: installer (>=0.7.0,<0.8.0)
++Requires-Dist: installer (>=0.7.0)
+ Requires-Dist: keyring (>=25.1.0,<26.0.0)
+ Requires-Dist: packaging (>=24.2)
+ Requires-Dist: pbs-installer[download,install] (>=2025.6.10)
+diff -up python-poetry-2.3.3/pyproject.toml.omv~ python-poetry-2.3.3/pyproject.toml
+--- python-poetry-2.3.3/pyproject.toml.omv~	2026-04-08 14:01:47.716970160 +0200
++++ python-poetry-2.3.3/pyproject.toml	2026-04-08 14:01:57.826942097 +0200
+@@ -10,7 +10,7 @@ dependencies = [
+     "cleo (>=2.1.0,<3.0.0)",
+     "dulwich (>=0.25.0,<2)",
+     "fastjsonschema (>=2.18.0,<3.0.0)",
+-    "installer (>=0.7.0,<0.8.0)",
++    "installer (>=0.7.0)",
+     "keyring (>=25.1.0,<26.0.0)",
+     # packaging uses calver, so version is unclamped
+     "packaging (>=24.2)",  # PEP 639 support was added in 24.2
