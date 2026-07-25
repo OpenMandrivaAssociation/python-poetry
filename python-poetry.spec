@@ -1,5 +1,5 @@
 Name:		python-poetry
-Version:	2.3.3
+Version:	2.4.1
 Release:	1
 Source0:	https://files.pythonhosted.org/packages/source/p/poetry/poetry-%{version}.tar.gz
 Source1000:	%{name}.rpmlintrc
@@ -14,9 +14,6 @@ BuildRequires:	python%{pyver}dist(poetry-core)
 BuildRequires:	python%{pyver}dist(findpython)
 BuildRequires:	python%{pyver}dist(pbs-installer)
 BuildArch:	noarch
-
-%patchlist
-poetry-2.3.3-allow-newer-installer.patch
 
 %description
 Python dependency management and packaging made easy.
