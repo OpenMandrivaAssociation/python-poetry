@@ -1,5 +1,5 @@
 Name:		python-poetry
-Version:	2.4.3
+Version:	2.5.0
 Release:	1
 Source0:	https://files.pythonhosted.org/packages/source/p/poetry/poetry-%{version}.tar.gz
 Source1000:	%{name}.rpmlintrc
@@ -15,9 +15,9 @@ BuildRequires:	python%{pyver}dist(findpython)
 BuildRequires:	python%{pyver}dist(pbs-installer)
 BuildArch:	noarch
 
-# Upstream pins poetry-core ==2.4.0; accept compatible 2.4.x (e.g. 2.4.1)
+# Upstream pins poetry-core ==2.5.0; accept compatible 2.5.x
 %prep -a
-sed -i 's/"poetry-core (==2.4.0)"/"poetry-core (>=2.4)"/' pyproject.toml
+sed -i 's/"poetry-core (==2.5.0)"/"poetry-core (>=2.5)"/' pyproject.toml
 
 %description
 Python dependency management and packaging made easy.
