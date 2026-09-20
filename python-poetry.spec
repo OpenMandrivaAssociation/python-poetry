@@ -1,5 +1,5 @@
 Name:		python-poetry
-Version:	2.5.0
+Version:	2.5.1
 Release:	1
 Source0:	https://files.pythonhosted.org/packages/source/p/poetry/poetry-%{version}.tar.gz
 Source1000:	%{name}.rpmlintrc
